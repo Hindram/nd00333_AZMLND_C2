@@ -9,7 +9,11 @@ name = "best-model-deploy"
 
 # load existing web service
 service = Webservice(name=name, workspace=ws)
-logs = service.get_logs(enable_app_insights=True)
+
+# enable application insight
+service.update(enable_app_insights=True)
+
+logs = service.get_logs()
 
 for line in logs.split('\n'):
     print(line)
