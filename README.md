@@ -79,6 +79,25 @@ In this step, I have interacted with the trained model using endpoint.py script 
 ![](Screenshots/benchmark-run-2.png)
 
 #### Step 7: Create, Publish and Consume a Pipeline
+I have updated the Jupyter Notebook with the dataset, cluster, keys, and model names and created the pipline.Then, published the pipeline using python SDK.
+
+##### Creating Pipline Screenshot
+![](Screenshots/create-pip.png)
+![](Screenshots/creating-pipline-running.png)
+
+##### RunDetails Widget of the Pipline Screenshot
+![](Screenshots/pythonsdk-pip-widget.png)
+![](Screenshots/pysdk-pip-widget-dtls.png)
+
+##### Completed Piplines Screenshot
+![](Screenshots/pip-completed.png)
+
+##### Rest Pipline from pyhon SDK Screenshot
+![](Screenshots/pips-runs-completed.png)
+
+##### Published Pipeline showing a REST endpoint Screenshot
+![](Screenshots/pysdk-publish-pip.png)
+![](Screenshots/pip-endpoint-detl.png)
 
 ## Screen Recording
 [Click Here](https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb)
