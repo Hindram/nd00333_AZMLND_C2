@@ -1,5 +1,13 @@
 # Project: Operationalizing Machine Learning
 
+## Table of content
+* [Overview](#overview)
+* [Architectural Diagram](#architectural-diagram)
+* [Key Steps](#key-steps)
+* [Screen Recording](#screen-recording)
+* [Future work](#standout-suggestions)
+
+## Overview
 In this project, we will use the Bank Marketing dataset. This dataset shows information about the marketing campaign of a bank. The aim of the analysis is to predict potential customers who are willing to contribute to the bank's future loan or deposit plans. Hence, improving the overall future performance. We will use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We will also create, publish, and consume a pipeline. 
 
 ## Architectural Diagram
