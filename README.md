@@ -35,6 +35,50 @@ The best model was a VotingEnsemble pipeline with 0.918 accuracy rate.
 ![](Screenshots/expt-models.png)
 
 #### Step 3: Deploy the Best Model
+In this step, I deployed the best model while enabling authentication and ACI Instance. Later, the deployed model showed in the endpoints section.
+
+##### Deploy Best Model Screenshot
+![](Screenshots/deploy-best-model.png)
+
+##### Deployed Model Endpoint Screenshot
+![](Screenshots/deployment-endpoint.png)
+
+#### Step 4: Enable Application Insights
+From the deployed model, I have enabled application insights and retrieve logs. This step will help in detecting failures, anomalies...etc in the model.
+
+##### Before Enabling Application Insights Screenshot
+![](Screenshots/before-enabling-insghts.png)
+
+##### After Enabling Application Insights Screenshot
+![](Screenshots/after-enabling-insights.png)
+
+##### Enable Logs by running logs.py script Screenshot
+![](Screenshots/py-logs.png)
+![](Screenshots/logs-cont.png)
+
+#### Step 5: Swagger Documentation
+A swagger is a tool used to document and consume RESTful web services with APIs in GET & POST HTTP requests. To enable swagger I have run serve.py script in port 8000 and swagger.sh in port 9000. Then, interact with the swagger instance and retrieve its response from localhost. 
+
+##### Running swagger.sh Screenshot
+![](Screenshots/bash-swagger.png)
+
+
+##### API Interaction Screenshot
+![](Screenshots/API-interaction.png)
+![](Screenshots/API-result.png)
+![](Screenshots/API-result-cont.png)
+
+#### Step 6: Consume Model Endpoints
+In this step, I have interacted with the trained model using endpoint.py script updating the score url & Key. After running the code, it produced a JSON output response. Also, to load & test my model, I executed the benchmark bash script. 
+
+##### Consume Endpoint Screenshot
+![](Screenshots/endpoint-response.png)
+
+##### Benchmark Screenshot
+![](Screenshots/benchmark-run.png)
+![](Screenshots/benchmark-run-2.png)
+
+#### Step 7: Create, Publish and Consume a Pipeline
 
 ## Screen Recording
 [Click Here](https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb)
