@@ -14,7 +14,27 @@ In this project, we will use the Bank Marketing dataset. This dataset shows info
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+
+#### Step 1: Authentication
+Since I worked with Udacity lab, I have skipped this step as I'm not authorized to create a security principal. 
+
+#### Step 2: Automated ML Experiment
+In this step, I have created a new experiment using Automated ML and the bank marketing registered dataset, created and configured a compute cluster, and used it to run the experiment.
+
+###### Registerd Dataset Screenshot
+![](Screenshots/registerd-ds.png)
+
+##### Creating Automl Experiment Screenshot
+![](Screenshots/creating-expt.png)
+
+##### Automl Experiment Completed Screenshot
+![](Screenshots/expt-completed-detl-w-best-model.png)
+
+##### Best Model Screenshot
+The best model was a VotingEnsemble pipeline with 0.918 accuracy rate. 
+![](Screenshots/expt-models.png)
+
+#### Step 3: Deploy the Best Model
 
 ## Screen Recording
 [Click Here](https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb)
