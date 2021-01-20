@@ -12,7 +12,7 @@
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
 ## Screen Recording
-![https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb](Click Here)
+[Click Here](https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb)
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
