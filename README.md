@@ -11,7 +11,18 @@
 In this project, we will use the Bank Marketing dataset. This dataset shows information about the marketing campaign of a bank. The aim of the analysis is to predict potential customers who are willing to contribute to the bank's future loan or deposit plans. Hence, improving the overall future performance. We will use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We will also create, publish, and consume a pipeline. 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+
+The diagram below shows the steps followed in implementing the project:
+![](Screenshots/Architectural-Diagram.png)
+
+- Authentication: Create a Security Principal to associate with the Azure Workspace.
+- Automated ML Experiment: Create experiment using Automated ML, configure a compute cluster, and use that cluster to run the experiment.
+- Cleaning & Training the model: Automl will validate and clean the data then train it with several algorithms. 
+- Deploy the best model: Deploy the model with the highest accuracy rate and move it to production.
+- Enable insights & logging: To monitor model behavior and get detailed information about the running processes. 
+- Swagger Documentation : Consume the deployed model using Swagger.
+- Interact with model & benchmark: consume the endpoint using test records by running enpoint.py script, load and test the model using benchmark.sh script.
+- Create & publish pipeline: Create & publishing a pipeline using Python SDK. 
 
 ## Key Steps
 
@@ -81,18 +92,18 @@ In this step, I have interacted with the trained model using endpoint.py script 
 #### Step 7: Create, Publish and Consume a Pipeline
 I have updated the Jupyter Notebook with the dataset, cluster, keys, and model names and created the pipline.Then, published the pipeline using python SDK.
 
-##### Creating Pipline Screenshot
+##### Creating Pipeline Screenshot
 ![](Screenshots/create-pip.png)
 ![](Screenshots/creating-pipline-running.png)
 
-##### RunDetails Widget of the Pipline Screenshot
+##### RunDetails Widget of the Pipeline Screenshot
 ![](Screenshots/pythonsdk-pip-widget.png)
 ![](Screenshots/pysdk-pip-widget-dtls.png)
 
-##### Completed Piplines Screenshot
+##### Completed Pipelines Screenshot
 ![](Screenshots/pip-completed.png)
 
-##### Rest Pipline from pyhon SDK Screenshot
+##### Rest Pipeline from pyhon SDK Screenshot
 ![](Screenshots/pips-runs-completed.png)
 
 ##### Published Pipeline showing a REST endpoint Screenshot
