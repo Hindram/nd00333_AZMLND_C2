@@ -30,51 +30,55 @@ The diagram below shows the steps followed in implementing the project:
 Since I worked with Udacity lab, I have skipped this step as I'm not authorized to create a security principal. 
 
 #### Step 2: Automated ML Experiment
-In this step, I have created a new experiment using Automated ML and the bank marketing registered dataset, created and configured a compute cluster, and used it to run the experiment.
+In this step, I have created a new experiment using Automated ML and the bank marketing registered dataset, created and configured a compute cluster, and used it to run the experiment. I have selected 'y' column as the target column.
 
-###### Registerd Dataset Screenshot
+###### Screenshot 1: Registerd Dataset
 ![](Screenshots/registerd-ds.png)
 
-##### Creating Automl Experiment Screenshot
+After selecting the registered bank marketing dataset, I have created the automl model using Standard_DS12_v2 compute cluster type for the VM with 1 minimum number of nodes. I have selected classification as the type of experiment & enabled explain best model options to get the best model with the highest accuracy out of all runs with the best algorithm for the task. The experiment has been completed after training the dataset with many models.
+
+##### Screenshot 2: Creating Automl Experiment 
 ![](Screenshots/creating-expt.png)
 
-##### Automl Experiment Completed Screenshot
+##### Screenshot 3: Automl Experiment Completed 
 ![](Screenshots/expt-completed-detl-w-best-model.png)
 
-##### Best Model Screenshot
+##### Screenshot 4: Best Model
 The best model was a VotingEnsemble pipeline with 0.918 accuracy rate. 
 ![](Screenshots/expt-models.png)
 
 #### Step 3: Deploy the Best Model
-In this step, I deployed the best model while enabling authentication and ACI Instance. Later, the deployed model showed in the endpoints section.
+In this step, I deployed the best model while enabling authentication and Azure Container Instance (ACI). Later, the deployed model showed in the endpoints section.
 
-##### Deploy Best Model Screenshot
+##### Screenshot 5: Deploy Best Model 
 ![](Screenshots/deploy-best-model.png)
 
-##### Deployed Model Endpoint Screenshot
+##### Screenshot 6: Deployed Model Endpoint
 ![](Screenshots/deployment-endpoint.png)
 
 #### Step 4: Enable Application Insights
-From the deployed model, I have enabled application insights and retrieve logs. This step will help in detecting failures, anomalies...etc in the model.
+From the deployed best model, I have enabled application insights and retrieve logs. This step will help in detecting failures, anomalies...etc in the model. The executed code in logs.py enables Application Insights. Application Insights were disabled before running logs.py script.
 
-##### Before Enabling Application Insights Screenshot
+##### Screenshot 7: Before Enabling Application Insights 
 ![](Screenshots/before-enabling-insghts.png)
 
-##### After Enabling Application Insights Screenshot
+##### Screenshot 8: After Enabling Application Insights
 ![](Screenshots/after-enabling-insights.png)
 
-##### Enable Logs by running logs.py script Screenshot
+##### Screenshot 9: Enable Logs by running logs.py script
 ![](Screenshots/py-logs.png)
 ![](Screenshots/logs-cont.png)
 
 #### Step 5: Swagger Documentation
 A swagger is a tool used to document and consume RESTful web services with APIs in GET & POST HTTP requests. To enable swagger I have run serve.py script in port 8000 and swagger.sh in port 9000. Then, interact with the swagger instance and retrieve its response from localhost. 
 
-##### Running swagger.sh Screenshot
+##### Screenshot 10: Running swagger.sh 
 ![](Screenshots/bash-swagger.png)
 
 
-##### API Interaction Screenshot
+##### Screenshot 11, 12, 13: API Interaction 
+Best model documentation showed by swagger 
+
 ![](Screenshots/API-interaction.png)
 ![](Screenshots/API-result.png)
 ![](Screenshots/API-result-cont.png)
@@ -82,31 +86,33 @@ A swagger is a tool used to document and consume RESTful web services with APIs 
 #### Step 6: Consume Model Endpoints
 In this step, I have interacted with the trained model using endpoint.py script updating the score url & Key. After running the code, it produced a JSON output response. Also, to load & test my model, I executed the benchmark bash script. 
 
-##### Consume Endpoint Screenshot
+##### Screenshot 14: Consume Endpoint 
 ![](Screenshots/endpoint-response.png)
 
-##### Benchmark Screenshot
+##### Screenshot 15, 16: Benchmark 
 ![](Screenshots/benchmark-run.png)
 ![](Screenshots/benchmark-run-2.png)
 
 #### Step 7: Create, Publish and Consume a Pipeline
 I have updated the Jupyter Notebook with the dataset, cluster, keys, and model names and created the pipline.Then, published the pipeline using python SDK.
 
-##### Creating Pipeline Screenshot
+##### Screenshot 17, 18: Creating Pipeline 
 ![](Screenshots/create-pip.png)
 ![](Screenshots/creating-pipline-running.png)
 
-##### RunDetails Widget of the Pipeline Screenshot
+##### Screenshot 19, 20: RunDetails Widget of the Pipeline
 ![](Screenshots/pythonsdk-pip-widget.png)
 ![](Screenshots/pysdk-pip-widget-dtls.png)
 
-##### Completed Pipelines Screenshot
+##### Screenshot 21: Completed Pipelines 
 ![](Screenshots/pip-completed.png)
 
-##### Rest Pipeline from pyhon SDK Screenshot
+##### Screenshot 22: Rest Pipeline from pyhon SDK
 ![](Screenshots/pips-runs-completed.png)
 
-##### Published Pipeline showing a REST endpoint Screenshot
+##### Screenshot 23, 24 Published Pipeline showing a REST endpoint
+The REST endpoint shows a status as Active.
+
 ![](Screenshots/pysdk-publish-pip.png)
 ![](Screenshots/pip-endpoint-detl.png)
 
