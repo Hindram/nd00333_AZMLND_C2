@@ -111,7 +111,7 @@ I have updated the Jupyter Notebook with the dataset, cluster, keys, and model n
 ![](Screenshots/pip-endpoint-detl.png)
 
 ## Screen Recording
-[Click Here](https://www.loom.com/share/3727c42fa67f4288a224d28c78d495cb)
+[Click Here](https://www.loom.com/share/71e5770326d34e2da6be697d85df232f)
 
 ## Standout Suggestions
 * I would resolve the imbalance issue in the dataset to prevent the bias that could impact the prediction. This type of issue is common in Classification problems.
